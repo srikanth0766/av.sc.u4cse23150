@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vehicle Scheduling Output</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --ink: #132238;
+      --muted: #5f6f84;
+      --accent: #0f766e;
+      --accent-2: #d97706;
+      --line: #d9e2ec;
+      --chip: #eef6ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(15,118,110,0.12), transparent 28%),
+        linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+      color: var(--ink);
+      padding: 32px;
+    }
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #123047 55%, #0f766e 100%);
+      color: white;
+      border-radius: 26px;
+      padding: 28px 32px;
+      box-shadow: 0 24px 70px rgba(15, 23, 42, 0.18);
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 42px;
+      line-height: 1.05;
+    }
+    .subtitle {
+      margin: 0;
+      font-size: 18px;
+      color: rgba(255,255,255,0.82);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 22px;
+    }
+    .stat, .card {
+      background: var(--card);
+      border: 1px solid rgba(217, 226, 236, 0.9);
+      border-radius: 22px;
+      box-shadow: 0 14px 38px rgba(15, 23, 42, 0.06);
+    }
+    .stat {
+      padding: 20px 22px;
+    }
+    .label {
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+    .value {
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .cards {
+      display: grid;
+      gap: 18px;
+      margin-top: 22px;
+    }
+    .card {
+      padding: 22px;
+    }
+    .card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      margin: 0;
+      font-size: 27px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .chip {
+      background: var(--chip);
+      color: #15467a;
+      border: 1px solid #cfe0f5;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+    }
+    th, td {
+      text-align: left;
+      padding: 14px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: white;
+      font-weight: 700;
+      font-size: 12px;
+    }
+    .placement { background: #0f766e; }
+    .result { background: #1d4ed8; }
+    .event { background: #d97706; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    
+    <div class="hero">
+      <h1>Vehicle Maintenance Scheduler</h1>
+      <p class="subtitle">Live output from the Affordmed evaluation service rendered for submission screenshots.</p>
+    </div>
+    <div class="grid">
+      <div class="stat"><div class="label">Depots Processed</div><div class="value">3</div></div>
+      <div class="stat"><div class="label">Tasks Available</div><div class="value">39</div></div>
+      <div class="stat"><div class="label">Best Total Impact</div><div class="value">210</div></div>
+    </div>
+    <div class="cards">
+            <section class="card">
+              <div class="card-head">
+                <h2>Depot 3</h2>
+                <div class="meta">Capacity 188 hrs • Used 187 hrs • Impact 210</div>
+              </div>
+              <div class="chips"><span class="chip">6abff8c0-dcd2-4f65-840f-27a1d1646e0d</span><span class="chip">7ba4375c-0a10-4692-8110-c0009da371db</span><span class="chip">d722ae60-4d75-47ac-8d29-11e66788b811</span><span class="chip">f88e669b-2c8d-4678-b9e1-c667ea526b40</span><span class="chip">f7eebd7c-f70e-4685-a7f5-10d3cc8ecd1f</span><span class="chip">2f6f34c7-ffc1-4d36-b30a-ecc5e29e9078</span><span class="chip">5b07b3f6-a99c-45b2-a057-20abd78e0e13</span><span class="chip">d7182649-f713-48e6-a39b-865cb2bded7a</span><span class="chip">e12b3ea7-7eb3-4313-8a17-7f86ce87974e</span><span class="chip">536a40eb-0738-4ccf-8517-1c84d9409507</span><span class="chip">d4edc931-d5d7-4f9a-bfa2-6a3286675c90</span><span class="chip">f9ba3bf1-931a-4f04-af69-100c8eeda3a2</span><span class="chip">793bf0c8-11cd-411b-a9b6-50429ac09e52</span><span class="chip">cba35c06-d811-4747-979b-dd6630ee00ba</span><span class="chip">b16a0b99-05c2-4eba-9740-7edc4d92b6a7</span><span class="chip">b80ff73b-dc36-4a38-a498-1a338aa02c6e</span><span class="chip">de39cae1-a753-41ab-9880-3b1bedfbe0bd</span><span class="chip">4ba44f34-54a7-4ab4-ae12-829df2f86639</span><span class="chip">e38233dc-ee3a-4a4f-938c-20e353b8b378</span><span class="chip">93d66ad6-a8f3-4111-a1b4-c74bdd45e5c4</span><span class="chip">d58ea992-db80-4b29-adb5-49779ed34940</span><span class="chip">ba9d9a85-9b8f-4cb4-9701-6324bd4fce74</span><span class="chip">ed10a0e1-3ba0-4249-860b-b8a38105a469</span><span class="chip">6ee3bbdb-4515-48ce-b3d8-8fe2346edc70</span><span class="chip">53cf2c86-4931-4a7e-8379-e2cb54e41770</span><span class="chip">b29701da-aff6-4777-964d-948275842f85</span><span class="chip">834035e2-5118-4aa1-9a0f-37b08ffda30c</span><span class="chip">14b8cae9-e571-4031-b924-2792b2c5d76c</span><span class="chip">ea85822c-741a-4c7e-991b-5be06758fa13</span><span class="chip">d67a4ed8-6cd1-49fe-a8a7-ac2dfbc1465e</span><span class="chip">ce807f24-3e02-4b74-b6d1-61d1e7fa9eee</span><span class="chip">0f5939ab-dcd9-4865-b19c-b01a4312531f</span><span class="chip">12cb06aa-3650-4226-aada-d99859ebfa4c</span><span class="chip">bcc3569c-4b61-454e-9a71-5546d4937c15</span><span class="chip">69287e59-8b3b-42db-84be-479f1aaeeb62</span><span class="chip">a3cf20bf-11cc-49e0-90c1-e66f820df2aa</span><span class="chip">027a3a1b-3f28-49ea-8ee0-5134151440ab</span><span class="chip">b4d2fa3a-e533-469e-b3af-072898f2b432</span><span class="chip">3ddd2145-93e4-455e-81e7-3a470fbc4f6b</span></div>
+            </section>
+            
+            <section class="card">
+              <div class="card-head">
+                <h2>Depot 4</h2>
+                <div class="meta">Capacity 97 hrs • Used 96 hrs • Impact 166</div>
+              </div>
+              <div class="chips"><span class="chip">d722ae60-4d75-47ac-8d29-11e66788b811</span><span class="chip">f88e669b-2c8d-4678-b9e1-c667ea526b40</span><span class="chip">2f6f34c7-ffc1-4d36-b30a-ecc5e29e9078</span><span class="chip">e12b3ea7-7eb3-4313-8a17-7f86ce87974e</span><span class="chip">f9ba3bf1-931a-4f04-af69-100c8eeda3a2</span><span class="chip">793bf0c8-11cd-411b-a9b6-50429ac09e52</span><span class="chip">cba35c06-d811-4747-979b-dd6630ee00ba</span><span class="chip">b80ff73b-dc36-4a38-a498-1a338aa02c6e</span><span class="chip">de39cae1-a753-41ab-9880-3b1bedfbe0bd</span><span class="chip">4ba44f34-54a7-4ab4-ae12-829df2f86639</span><span class="chip">d58ea992-db80-4b29-adb5-49779ed34940</span><span class="chip">ed10a0e1-3ba0-4249-860b-b8a38105a469</span><span class="chip">6ee3bbdb-4515-48ce-b3d8-8fe2346edc70</span><span class="chip">53cf2c86-4931-4a7e-8379-e2cb54e41770</span><span class="chip">b29701da-aff6-4777-964d-948275842f85</span><span class="chip">14b8cae9-e571-4031-b924-2792b2c5d76c</span><span class="chip">ea85822c-741a-4c7e-991b-5be06758fa13</span><span class="chip">d67a4ed8-6cd1-49fe-a8a7-ac2dfbc1465e</span><span class="chip">ce807f24-3e02-4b74-b6d1-61d1e7fa9eee</span><span class="chip">12cb06aa-3650-4226-aada-d99859ebfa4c</span><span class="chip">bcc3569c-4b61-454e-9a71-5546d4937c15</span><span class="chip">69287e59-8b3b-42db-84be-479f1aaeeb62</span><span class="chip">a3cf20bf-11cc-49e0-90c1-e66f820df2aa</span><span class="chip">027a3a1b-3f28-49ea-8ee0-5134151440ab</span><span class="chip">3ddd2145-93e4-455e-81e7-3a470fbc4f6b</span></div>
+            </section>
+            
+            <section class="card">
+              <div class="card-head">
+                <h2>Depot 5</h2>
+                <div class="meta">Capacity 164 hrs • Used 162 hrs • Impact 204</div>
+              </div>
+              <div class="chips"><span class="chip">6abff8c0-dcd2-4f65-840f-27a1d1646e0d</span><span class="chip">7ba4375c-0a10-4692-8110-c0009da371db</span><span class="chip">d722ae60-4d75-47ac-8d29-11e66788b811</span><span class="chip">f88e669b-2c8d-4678-b9e1-c667ea526b40</span><span class="chip">f7eebd7c-f70e-4685-a7f5-10d3cc8ecd1f</span><span class="chip">2f6f34c7-ffc1-4d36-b30a-ecc5e29e9078</span><span class="chip">e12b3ea7-7eb3-4313-8a17-7f86ce87974e</span><span class="chip">d4edc931-d5d7-4f9a-bfa2-6a3286675c90</span><span class="chip">f9ba3bf1-931a-4f04-af69-100c8eeda3a2</span><span class="chip">793bf0c8-11cd-411b-a9b6-50429ac09e52</span><span class="chip">cba35c06-d811-4747-979b-dd6630ee00ba</span><span class="chip">b16a0b99-05c2-4eba-9740-7edc4d92b6a7</span><span class="chip">b80ff73b-dc36-4a38-a498-1a338aa02c6e</span><span class="chip">de39cae1-a753-41ab-9880-3b1bedfbe0bd</span><span class="chip">4ba44f34-54a7-4ab4-ae12-829df2f86639</span><span class="chip">e38233dc-ee3a-4a4f-938c-20e353b8b378</span><span class="chip">d58ea992-db80-4b29-adb5-49779ed34940</span><span class="chip">ba9d9a85-9b8f-4cb4-9701-6324bd4fce74</span><span class="chip">ed10a0e1-3ba0-4249-860b-b8a38105a469</span><span class="chip">6ee3bbdb-4515-48ce-b3d8-8fe2346edc70</span><span class="chip">53cf2c86-4931-4a7e-8379-e2cb54e41770</span><span class="chip">b29701da-aff6-4777-964d-948275842f85</span><span class="chip">834035e2-5118-4aa1-9a0f-37b08ffda30c</span><span class="chip">14b8cae9-e571-4031-b924-2792b2c5d76c</span><span class="chip">ea85822c-741a-4c7e-991b-5be06758fa13</span><span class="chip">d67a4ed8-6cd1-49fe-a8a7-ac2dfbc1465e</span><span class="chip">ce807f24-3e02-4b74-b6d1-61d1e7fa9eee</span><span class="chip">0f5939ab-dcd9-4865-b19c-b01a4312531f</span><span class="chip">12cb06aa-3650-4226-aada-d99859ebfa4c</span><span class="chip">bcc3569c-4b61-454e-9a71-5546d4937c15</span><span class="chip">69287e59-8b3b-42db-84be-479f1aaeeb62</span><span class="chip">a3cf20bf-11cc-49e0-90c1-e66f820df2aa</span><span class="chip">027a3a1b-3f28-49ea-8ee0-5134151440ab</span><span class="chip">b4d2fa3a-e533-469e-b3af-072898f2b432</span><span class="chip">3ddd2145-93e4-455e-81e7-3a470fbc4f6b</span></div>
+            </section>
+            </div>
+  </div>
+</body>
+</html>
