@@ -1,0 +1,66 @@
+{
+  "limit": 10,
+  "totalNotifications": 20,
+  "topNotifications": [
+    {
+      "ID": "91f332fa-0b2a-4d72-ac6a-1109bbcf8ce2",
+      "Type": "Placement",
+      "Message": "Meta Platforms Inc. hiring",
+      "Timestamp": "2026-05-06 10:00:25"
+    },
+    {
+      "ID": "18b1de8d-bbf5-4f32-9e37-28bbb9edd1fa",
+      "Type": "Placement",
+      "Message": "Meta Platforms Inc. hiring",
+      "Timestamp": "2026-05-06 08:00:57"
+    },
+    {
+      "ID": "87b7a461-8a73-4b4c-9321-80f06db65459",
+      "Type": "Placement",
+      "Message": "Marriott International Inc. hiring",
+      "Timestamp": "2026-05-06 08:00:45"
+    },
+    {
+      "ID": "2f9cd95e-6f91-4f16-9eef-43f42c3d31c9",
+      "Type": "Placement",
+      "Message": "Advanced Micro Devices Inc. hiring",
+      "Timestamp": "2026-05-06 07:01:21"
+    },
+    {
+      "ID": "15aaec96-0160-4fe1-a8c8-5371aeddf284",
+      "Type": "Placement",
+      "Message": "CSX Corporation hiring",
+      "Timestamp": "2026-05-06 00:00:13"
+    },
+    {
+      "ID": "08e79289-4842-4889-b5fc-16f23be08179",
+      "Type": "Placement",
+      "Message": "CSX Corporation hiring",
+      "Timestamp": "2026-05-05 19:31:01"
+    },
+    {
+      "ID": "8c2f875d-2d15-4f04-8d90-cc3c9cc1631a",
+      "Type": "Placement",
+      "Message": "Alphabet Inc. Class C hiring",
+      "Timestamp": "2026-05-05 19:30:37"
+    },
+    {
+      "ID": "47109b2b-a89c-45b3-9aef-0750bccd2ced",
+      "Type": "Placement",
+      "Message": "PayPal Holdings Inc. hiring",
+      "Timestamp": "2026-05-05 17:00:53"
+    },
+    {
+      "ID": "e848d853-eaae-4820-b2db-82826912b57a",
+      "Type": "Result",
+      "Message": "mid-sem",
+      "Timestamp": "2026-05-06 09:30:33"
+    },
+    {
+      "ID": "6a4fcd1f-e495-4495-923e-383b6e557c8d",
+      "Type": "Result",
+      "Message": "internal",
+      "Timestamp": "2026-05-06 07:31:17"
+    }
+  ]
+}
