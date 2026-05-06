@@ -194,7 +194,13 @@ def build_vehicle_html() -> None:
             """
         )
 
-    VEHICLE_HTML.write_text(_page_shell("Vehicle Scheduling Output", stats + '<div class="cards">' + "".join(cards) + "</div>"), encoding="utf-8")
+    VEHICLE_HTML.write_text(
+        _page_shell(
+            "Vehicle Maintanence Scheduling Output",
+            stats + '<div class="cards">' + "".join(cards) + "</div>",
+        ),
+        encoding="utf-8",
+    )
 
 
 def build_notification_html() -> None:

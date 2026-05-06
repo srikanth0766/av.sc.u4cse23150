@@ -24,4 +24,4 @@ The output will be written to `vehicle_maintanence_scheduling/output.json`.
 
 ## Screenshot
 
-![Vehicle Scheduling Screenshot](./vehicle_maintanence_scheduling_screenshot.png)
+![Vehicle Maintanence Scheduling Screenshot](./vehicle_maintanence_scheduling_screenshot.png)
